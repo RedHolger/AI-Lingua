@@ -24,18 +24,24 @@ FFMPEG_SAMPLE_RATE = 44100
 FFMPEG_CHANNELS = 1
 FFMPEG_FORMAT = "wav"
 
-# MPV Configuration
-MPV_CONFIG = {
-    "sub-auto": "fuzzy",
-    "sub-font-size": "45",
-    "sub-pos": "95",
-    "secondary-sub-pos": "5",
-    "loop-file": "inf"
-}
-
 # Transcription Configuration
 CHUNK_DURATION = 30  # seconds - increased to reduce number of API calls
 MAX_RETRIES = 3
 TIMEOUT = 60
 RATE_LIMIT_DELAY = 3  # seconds between API calls to respect rate limits
- 
+ # Enhanced synchronization settings
+SYNC_THRESHOLD = 0.6  # Minimum similarity for text matching
+MIN_SUBTITLE_DURATION = 1.0  # Minimum duration in seconds
+MAX_SUBTITLE_DURATION = 10.0  # Maximum duration in seconds
+INSTRUMENTAL_GAP_THRESHOLD = 3.0  # Seconds of silence = instrumental
+
+# MPV player settings for better subtitle display
+MPV_CONFIG = {
+    "sub-font-size": "24",
+    "secondary-sub-font-size": "20", 
+    "secondary-sub-color": "#FFFF00",  # Yellow for simplified
+    "sub-margin-y": "50",
+    "secondary-sub-margin-y": "100",
+    "sub-shadow-offset": "1",
+    "sub-border-size": "1"
+}

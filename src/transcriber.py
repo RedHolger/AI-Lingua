@@ -166,4 +166,26 @@ class Transcriber:
             all_transcriptions["lines"].extend(trans_result["lines"])
             all_simplifications["lines"].extend(simp_result["lines"])
         
-        return all_transcriptions, all_simplifications 
+        return all_transcriptions, all_simplifications
+
+    def adjust_segment_timing(self, segments_data, audio_duration):
+        """Adjust segment timing to better match audio duration."""
+        total_segments = len(segments_data["lines"])
+        if total_segments == 0:
+            return segments_data
+
+        # Calculate time per segment
+        time_per_segment = audio_duration / total_segments
+
+        adjusted_lines = []
+        for i, line in enumerate(segments_data["lines"]):
+            start_time = i * time_per_segment
+            end_time = min((i + 1) * time_per_segment, audio_duration)
+
+            adjusted_lines.append({
+                "start_time": start_time,
+                "end_time": end_time,
+                "text": line["text"]
+            })
+
+        return {"lines": adjusted_lines} 

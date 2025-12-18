@@ -1,4 +1,4 @@
-#!/home/manu/Documents/OS/english_learning_system/venv/bin/python
+#!/Users/manuvashistha/Documents/Lingua/venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys

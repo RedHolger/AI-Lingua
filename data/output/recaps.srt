@@ -1,0 +1,8 @@
+1
+00:00:00,000 --> 00:00:04,000
+Vocab: soup, have, he's, shinnosuke's, done, action, changed, went
+
+2
+00:00:04,000 --> 00:00:08,000
+Grammar: Past forms, Questions used, Future constructions, Negation patterns
+

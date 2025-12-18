@@ -1,0 +1,551 @@
+1
+00:00:00,000 --> 00:00:03,000
+Words: the, nightmare, taihen, busy, doubutsuen
+
+2
+00:00:03,000 --> 00:00:06,000
+Phrase: Crayon Shin-chan
+
+3
+00:00:06,000 --> 00:00:09,000
+Phrase: machi no doubutsuen wa isogashii
+
+4
+00:01:14,970 --> 00:01:17,970
+Words: and, what, you, for, ground
+
+5
+00:01:17,970 --> 00:01:20,970
+Phrase: Nohara
+
+6
+00:01:20,970 --> 00:01:23,970
+Phrase: Hiroshi
+Misae
+Shinnosuke
+
+7
+00:03:55,080 --> 00:03:58,080
+Words: chan, for, helping, out, shin
+
+8
+00:03:58,080 --> 00:04:01,080
+Phrase: Thanks for helping out, Shin-chan!
+
+9
+00:04:13,600 --> 00:04:16,600
+Words: fish, fresh, koi, butcher, meat
+
+10
+00:04:16,600 --> 00:04:19,600
+Phrase: Hello!
+
+11
+00:04:19,600 --> 00:04:22,600
+Phrase: Welcome!
+
+12
+00:05:24,860 --> 00:05:27,860
+Words: home, all, welcome, and, everything's
+
+13
+00:05:27,860 --> 00:05:30,860
+Phrase: Everything's all set.
+
+14
+00:05:30,860 --> 00:05:33,860
+Phrase: All that's left is the radishes and ground pork.
+
+15
+00:05:38,440 --> 00:05:41,440
+Words: don't, the, you, gone, i'm
+
+16
+00:05:41,440 --> 00:05:44,440
+Phrase: Wh-What's wrong?
+
+17
+00:05:44,440 --> 00:05:47,440
+Phrase: What's our phone number?
+
+18
+00:06:18,200 --> 00:06:21,200
+Words: action, turtle, kamen, come, help
+
+19
+00:06:21,200 --> 00:06:24,200
+Phrase: Help me! Help me!
+
+20
+00:06:24,200 --> 00:06:27,200
+Phrase: Quiet! No one's going turtle come save you!
+
+21
+00:06:57,820 --> 00:07:00,820
+Words: action, beam, home, i'm
+
+22
+00:07:00,820 --> 00:07:03,820
+Phrase: I'm home.
+
+23
+00:07:03,820 --> 00:07:06,820
+Phrase: Action Beam!
+
+24
+00:07:08,440 --> 00:07:11,440
+Words: grown, hey, she, shinnosuke, shopping
+
+25
+00:07:11,440 --> 00:07:14,440
+Phrase: Are you done?
+
+26
+00:07:14,440 --> 00:07:17,440
+Phrase: Yeah.
+
+27
+00:07:55,500 --> 00:07:58,500
+Words: are, busy, mommy's, mornings, chan
+
+28
+00:07:58,500 --> 00:08:01,500
+Phrase: Wait for me!
+Darling! Shin-chan!
+
+29
+00:08:01,500 --> 00:08:04,500
+Phrase: Oh
+
+30
+00:08:32,530 --> 00:08:35,530
+Words: going, are, bus, for, get
+
+31
+00:08:35,530 --> 00:08:38,530
+Phrase: He's only ridden the kindergarten bus three days this month,
+
+32
+00:08:38,530 --> 00:08:41,530
+Phrase: even though this month has already been paid for.
+
+33
+00:09:07,740 --> 00:09:10,740
+Words: all, right, then
+
+34
+00:09:10,740 --> 00:09:13,740
+Phrase: All right then...
+
+35
+00:09:17,760 --> 00:09:20,760
+Words: away, been, could, disappeared, get
+
+36
+00:09:20,760 --> 00:09:23,760
+Phrase: Hey, get up!
+
+37
+00:09:23,760 --> 00:09:26,760
+Phrase: Huh?
+
+38
+00:09:32,960 --> 00:09:35,960
+Words: you, that, you're, able, are
+
+39
+00:09:35,960 --> 00:09:38,960
+Phrase: You're not supposed to sleep in there, Shinnosuke!
+
+40
+00:09:38,960 --> 00:09:41,960
+Phrase: I'm sleepy.
+
+41
+00:09:55,660 --> 00:09:58,660
+Words: and, change, c'mon, clothes, don't
+
+42
+00:09:58,660 --> 00:10:01,660
+Phrase: Hey, don't sleep in there!
+
+43
+00:10:01,660 --> 00:10:04,660
+Phrase: C'mon, get your clothes out yourself and change into them.
+
+44
+00:10:14,980 --> 00:10:17,980
+Words: underwear, don't, hurry, just, like
+
+45
+00:10:17,980 --> 00:10:20,980
+Phrase: Don't tell me...
+
+46
+00:10:20,980 --> 00:10:23,980
+Phrase: No more sleeping!
+
+47
+00:10:30,570 --> 00:10:33,570
+Words: pants, after, all, bag, done
+
+48
+00:10:33,570 --> 00:10:36,570
+Phrase: Pants... Pants...
+
+49
+00:10:36,570 --> 00:10:39,570
+Phrase: That's not right.
+
+50
+00:10:46,920 --> 00:10:49,920
+Words: ikagawa, monthly, that, and, are
+
+51
+00:10:49,920 --> 00:10:52,920
+Phrase: Monthly Ikagawa
+
+52
+00:10:52,920 --> 00:10:55,920
+Phrase: Monthly Ikagawa
+
+53
+00:11:07,360 --> 00:11:10,360
+Words: wash, cold, done, face, handkerchief
+
+54
+00:11:10,360 --> 00:11:13,360
+Phrase: Done.
+
+55
+00:11:13,360 --> 00:11:16,360
+Phrase: Hey, hold on!
+
+56
+00:11:31,640 --> 00:11:34,640
+Words: bad, feeling, got, i've
+
+57
+00:11:34,640 --> 00:11:37,640
+Phrase: I've got a bad feeling...
+
+58
+00:11:38,700 --> 00:11:41,700
+Words: anger, feel, knew, punch, the
+
+59
+00:11:41,700 --> 00:11:44,700
+Phrase: I knew it!
+
+60
+00:11:44,700 --> 00:11:47,700
+Phrase: Feel the wrath of my triple punch of anger!
+
+61
+00:11:48,540 --> 00:11:51,540
+Words: eat, you, your, and, breakfast
+
+62
+00:11:51,540 --> 00:11:54,540
+Phrase: Eat your breakfast.
+
+63
+00:11:54,540 --> 00:11:57,540
+Phrase: It's not beef stew?
+
+64
+00:12:19,680 --> 00:12:22,680
+Words: you, changed, didn't, hurry, mind
+
+65
+00:12:22,680 --> 00:12:25,680
+Phrase: You changed the soup, didn't you?
+
+66
+00:12:25,680 --> 00:12:28,680
+Phrase: Never mind that. Hurry up!
+
+67
+00:12:27,640 --> 00:12:30,640
+Words: just, them, you, are, beans
+
+68
+00:12:30,640 --> 00:12:33,640
+Phrase: I'll eat this.
+
+69
+00:12:33,640 --> 00:12:36,640
+Phrase: These are no ordinary bean.
+
+70
+00:13:05,220 --> 00:13:08,220
+Words: you, did, hurry, the, bus
+
+71
+00:13:08,220 --> 00:13:11,220
+Phrase: I'm an idiot for giving him beans.
+
+72
+00:13:11,220 --> 00:13:14,220
+Phrase: You look depressed, Misae.
+
+73
+00:13:48,560 --> 00:13:51,560
+Words: good, morning, you, okay, afternoon
+
+74
+00:13:51,560 --> 00:13:54,560
+Phrase: Good morning, sensei!
+
+75
+00:13:54,560 --> 00:13:57,560
+Phrase: Good morning!
+
+76
+00:14:10,160 --> 00:14:13,160
+Words: just, keep, need, poop, shinnosuke
+
+77
+00:14:13,160 --> 00:14:16,160
+Phrase: What's wrong, Shinnosuke?
+
+78
+00:14:16,160 --> 00:14:19,160
+Phrase: I need to poop.
+
+79
+00:14:22,040 --> 00:14:25,040
+Words: him, bit, bring, came, i'll
+
+80
+00:14:25,040 --> 00:14:28,040
+Phrase: A bit came out...
+
+81
+00:14:28,040 --> 00:14:31,040
+Phrase: Go on without him.
+
+82
+00:14:43,260 --> 00:14:46,260
+Words: the, again, bus, fare, had
+
+83
+00:14:46,260 --> 00:14:49,260
+Phrase: The bus fare...
+
+84
+00:14:49,260 --> 00:14:52,260
+Phrase: The morning sun is radiant.
+
+85
+00:15:05,090 --> 00:15:08,090
+Words: ooh, doodling, good, morning, bring
+
+86
+00:15:08,090 --> 00:15:11,090
+Phrase: Ooh
+
+87
+00:15:11,090 --> 00:15:14,090
+Phrase: ▲
+
+88
+00:15:32,200 --> 00:15:35,200
+Words: you, have, i've, like, nose
+
+89
+00:15:35,200 --> 00:15:38,200
+Phrase: Shinnosuke-kun?
+
+90
+00:15:38,200 --> 00:15:41,200
+Phrase: What's wrong? Are you okay?
+
+91
+00:15:59,320 --> 00:16:02,320
+Words: you, draw, animals, anything, are
+
+92
+00:16:02,320 --> 00:16:05,320
+Phrase: I've got a runny nose.
+
+93
+00:16:05,320 --> 00:16:08,320
+Phrase: I told you to stop!
+
+94
+00:16:20,140 --> 00:16:23,140
+Words: you, see, like, your, anything
+
+95
+00:16:23,140 --> 00:16:26,140
+Phrase: Where are you going, Shin-chan?
+
+96
+00:16:26,140 --> 00:16:29,140
+Phrase: You want me to stay still?
+
+97
+00:17:01,960 --> 00:17:04,960
+Words: drawing, i'm, it's, see, flower
+
+98
+00:17:04,960 --> 00:17:07,960
+Phrase: Okay, let's see what kind of things you are all drawing!
+
+99
+00:17:07,960 --> 00:17:10,960
+Phrase: You're drawing a flower, right, Nene-chan?
+
+100
+00:18:07,270 --> 00:18:10,270
+Words: ball, draw, what, chan, confident
+
+101
+00:18:10,270 --> 00:18:13,270
+Phrase: Bo-chan, what is
+this supposed to be?
+
+102
+00:18:13,270 --> 00:18:16,270
+Phrase: Is it the sun?
+
+103
+00:18:32,740 --> 00:18:35,740
+Words: see, the, think, any, better
+
+104
+00:18:35,740 --> 00:18:38,740
+Phrase: Wow, you're very talented, Kazama-kun.
+
+105
+00:18:38,740 --> 00:18:41,740
+Phrase: Let me see it too.
+
+106
+00:18:53,780 --> 00:18:56,780
+Words: what
+
+107
+00:18:56,780 --> 00:18:59,780
+Phrase: What is it?
+
+108
+00:18:58,240 --> 00:19:01,240
+Words: shinnosuke, you, heart, shin, all
+
+109
+00:19:01,240 --> 00:19:04,240
+Phrase: What's wrong with it?
+
+110
+00:19:04,240 --> 00:19:07,240
+Phrase: There's no heart in this drawing.
+
+111
+00:19:54,260 --> 00:19:57,260
+Words: really, try
+
+112
+00:19:57,260 --> 00:20:00,260
+Phrase: Really try.
+
+113
+00:20:05,200 --> 00:20:08,200
+Words: airplane, anything, bicycle, but, could
+
+114
+00:20:08,200 --> 00:20:11,200
+Phrase: Looks good.
+
+115
+00:20:11,200 --> 00:20:14,200
+Phrase: You haven't even
+drawn anything yet.
+
+116
+00:20:23,440 --> 00:20:26,440
+Words: like, and, see, that, the
+
+117
+00:20:26,440 --> 00:20:29,440
+Phrase: What's wrong, Shin-chan?
+
+118
+00:20:29,440 --> 00:20:32,440
+Phrase: What does an
+airplane look like again?
+
+119
+00:20:54,040 --> 00:20:57,040
+Words: again, bit, does, forget, help
+
+120
+00:20:57,040 --> 00:21:00,040
+Phrase: What does it look like again?
+
+121
+00:21:00,040 --> 00:21:03,040
+Phrase: Forget it.
+I'll help you out a bit.
+
+122
+00:21:08,540 --> 00:21:11,540
+Words: nene, chan, class, even, for
+
+123
+00:21:11,540 --> 00:21:14,540
+Phrase: Nene
+
+124
+00:21:14,540 --> 00:21:17,540
+Phrase: Nene
+
+125
+00:21:38,190 --> 00:21:41,190
+Words: like, this, actually, all, and
+
+126
+00:21:41,190 --> 00:21:44,190
+Phrase: I can't let her know that I actually drew most of it.
+
+127
+00:21:44,190 --> 00:21:47,190
+Phrase: Like this, okay?
+
+128
+00:21:55,200 --> 00:21:58,200
+Words: look, that, apparently, drawing, he's
+
+129
+00:21:58,200 --> 00:22:01,200
+Phrase: Huh? Where'd Shinnosuke go?
+
+130
+00:22:01,200 --> 00:22:04,200
+Phrase: Look, he's in there.
+
+131
+00:22:10,100 --> 00:22:13,100
+Words: see
+
+132
+00:22:13,100 --> 00:22:16,100
+Phrase: See ya
+
+133
+00:22:16,100 --> 00:22:19,100
+Phrase: See ya
+
+134
+00:22:23,450 --> 00:22:26,450
+Words: you, sing, arimasu, can, for
+
+135
+00:22:26,450 --> 00:22:29,450
+Phrase: uta wo utaou kimi no tame ni
+
+136
+00:22:29,450 --> 00:22:32,450
+Phrase: Let's sing a song for you
+

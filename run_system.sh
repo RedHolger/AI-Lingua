@@ -1,53 +1,84 @@
 #!/bin/bash
 
-# Exit on any error
 set -e
 
 echo "Setting up English Learning System..."
 
-# Create virtual environment if it doesn't exist
+# -----------------------
+# CONFIG
+# -----------------------
+AI_PORT=8001
+JAVA_PORT=8080
+
+# -----------------------
+# Python environment
+# -----------------------
 if [ ! -d "venv" ]; then
-    echo "Creating virtual environment..."
-    python -m venv venv
+  echo "Creating virtual environment..."
+  python3 -m venv venv
 fi
 
-# Activate virtual environment
 echo "Activating virtual environment..."
 source venv/bin/activate
 
-# Install dependencies
 echo "Installing Python dependencies..."
 pip install -r requirements.txt
 
-# Install system dependencies if not present
-if ! command -v ffmpeg &> /dev/null; then
-    echo "Installing FFmpeg..."
-    sudo apt-get update
-    sudo apt-get install -y ffmpeg
+# -----------------------
+# System dependencies
+# -----------------------
+if ! command -v ffmpeg &>/dev/null; then
+  echo "FFmpeg not found. macOS: brew install ffmpeg"
 fi
 
-if ! command -v mpv &> /dev/null; then
-    echo "Installing MPV..."
-    sudo apt-get install -y mpv
+if ! command -v mpv &>/dev/null; then
+  echo "MPV not found. macOS: brew install mpv"
 fi
 
-# Check for .env file and Gemini API key
+# -----------------------
+# Environment variables
+# -----------------------
 if [ ! -f ".env" ]; then
-    echo "Creating .env file..."
-    echo "GEMINI_API_KEY=AIzaSyC4Gl8HKK91UfuecH40i9CIVS3WPqa_2ns" > .env
+  echo "Creating .env file..."
+  echo "GEMINI_API_KEY=your_api_key_here" >.env
 fi
 
-# Create necessary directories
+# -----------------------
+# Data directories
+# -----------------------
 echo "Creating data directories..."
 mkdir -p data/{input,output,temp}
 
-# Check if input file exists
-if [ ! -f "data/input/05. Messy.flac" ]; then
-    echo "Please place your audio/video file in the data/input directory"
-    echo "Expected file: data/input/05. Messy.flac"
-    exit 1
+# -----------------------
+# Input file resolution
+# -----------------------
+INPUT_FILE="$1"
+if [ -z "$INPUT_FILE" ]; then
+  INPUT_FILE=$(ls -1 data/input/*.{mp4,mkv,mp3,wav,flac} 2>/dev/null | head -n 1)
 fi
 
-# Run the system
-echo "Running the English Learning System..."
-PYTHONPATH=$PYTHONPATH:. python src/main.py "data/input/05. Messy.flac" 
+if [ -z "$INPUT_FILE" ] || [ ! -f "$INPUT_FILE" ]; then
+  echo "No input media found."
+  echo "Place a file in data/input or pass a path as argument."
+  exit 1
+fi
+
+# -----------------------
+# Start FastAPI safely
+# -----------------------
+if lsof -i :$AI_PORT &>/dev/null; then
+  echo "FastAPI already running on port $AI_PORT"
+else
+  echo "Starting AI service (FastAPI) on port $AI_PORT..."
+  PYTHONPATH=.:src uvicorn src.ai_service:app \
+    --host 0.0.0.0 \
+    --port $AI_PORT \
+    --log-level info &
+fi
+
+# -----------------------
+# Start Spring Boot
+# -----------------------
+echo "Starting Java Spring Boot service on port $JAVA_PORT..."
+cd java/lingua-app
+mvn -q -DskipTests spring-boot:run
