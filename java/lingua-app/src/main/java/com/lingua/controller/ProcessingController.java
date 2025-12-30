@@ -21,7 +21,7 @@ public class ProcessingController {
 
   public ProcessingController(MediaService mediaService) {
     this.mediaService = mediaService;
-    this.aiAgentClient = new AiAgentClient(System.getProperty("ai.service.url","http://localhost:8000"));
+    this.aiAgentClient = new AiAgentClient(System.getProperty("ai.service.url","http://localhost:8001"));
   }
 
   private Path resolveProjectPath(String relativePath) {
