@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lingua Player</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      }
+      .root {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 16px;
+        gap: 12px;
+      }
+      .row {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      input[type="text"] {
+        flex: 1;
+        padding: 6px 8px;
+      }
+      button {
+        padding: 6px 12px;
+      }
+      #status {
+        padding: 8px;
+        border-radius: 4px;
+        background: #f3f3f3;
+        min-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root">
+      <div class="row">
+        <input id="videoPath" type="text" placeholder="Choose a video file" />
+        <button id="browseBtn">Browse…</button>
+      </div>
+      <div class="row">
+        <button id="startBtn">Start Lingua Player</button>
+      </div>
+      <div id="status"></div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
+

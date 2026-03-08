@@ -31,13 +31,16 @@ class Transcriber:
         Only return the JSON object, no other text.
         """
 
-    def _create_simplification_prompt(self, transcription: Dict) -> str:
+    def _create_simplification_prompt(self, transcription: Dict, level: str = "A1") -> str:
         """Create the prompt for text simplification."""
         lines = [line["text"] for line in transcription["lines"]]
         text = "\n".join(lines)
         
         return f"""
-        Please simplify the following text to make it easier to understand:
+        Please simplify the following text to make it suitable for a language learner at CEFR level {level}.
+        Keep the meaning but use simpler vocabulary and grammar appropriate for {level}.
+        
+        Text to simplify:
         {text}
         
         Return the simplified version in the same JSON format:
@@ -106,13 +109,13 @@ class Transcriber:
                 else:
                     raise RuntimeError(f"Failed to transcribe after {MAX_RETRIES} attempts: {e}")
 
-    async def simplify_text(self, transcription: Dict) -> Dict:
+    async def simplify_text(self, transcription: Dict, level: str = "A1") -> Dict:
         """Simplify the transcribed text using Gemini."""
         retries = MAX_RETRIES
         while retries > 0:
             try:
                 response = self.model.generate_content(
-                    [{"text": self._create_simplification_prompt(transcription)}],
+                    [{"text": self._create_simplification_prompt(transcription, level=level)}],
                     generation_config={
                         "temperature": 0.1,
                         "top_p": 0.8,

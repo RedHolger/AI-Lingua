@@ -1,0 +1,7 @@
+
+google-generativeai
+gTTS
+srt
+pydub
+python-dotenv
+requests

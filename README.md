@@ -46,6 +46,11 @@ Use `./run_system.sh [optional_path]`:
 - HMAC secret: `-Dai.hmac.secret=$AI_HMAC_SECRET` or env var `AI_HMAC_SECRET`
 - Learner level per request: `"learnerLevel": "A1" | "A2" | ...`
 
+## Research & Benchmarking
+Lingua includes a research workflow for benchmarking CEFR-level simplification on LibriSpeech using local transcripts and audio.
+- Metrics: BERTScore (semantic fidelity), Flesch–Kincaid (readability), and perplexity (fluency).
+- Use the research runner to evaluate small subsets and aggregate results to JSON for analysis.
+
 ## Troubleshooting
 - Maven not found: install Maven or add mvnw wrapper.
 - Port conflicts: ensure `8001` (AI) and `8080` (Java) are free; update ports if needed.
@@ -56,4 +61,3 @@ Use `./run_system.sh [optional_path]`:
 - Java orchestrates processing and I/O; Python handles AI-heavy tasks via FastAPI.
 - Endpoints implemented in `src/ai_service.py`: `/simplify`, `/analyze_language`, `/generate_previews`, `/generate_recaps`, `/generate_quizzes`.
 - HMAC-SHA256 signing is supported for secure inter-service requests.
-

@@ -30,8 +30,9 @@ async def simplify(request: Request) -> Dict:
         return {"error":"invalid signature"}
     payload_json = json.loads(body.decode())
     lines = [Line(**l) for l in payload_json.get("lines", [])]
+    level = payload_json.get("learnerLevel", "A1")
     data = {"lines": [l.dict() for l in lines]}
-    res = await transcriber.simplify_text(data)
+    res = await transcriber.simplify_text(data, level=level)
     return res
 
 @app.post("/analyze_language")

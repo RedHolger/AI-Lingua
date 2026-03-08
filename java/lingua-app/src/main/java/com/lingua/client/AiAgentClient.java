@@ -8,12 +8,12 @@ import org.apache.hc.client5.http.config.RequestConfig;
 import org.apache.hc.core5.http.ContentType;
 import org.apache.hc.core5.http.HttpEntity;
 import org.apache.hc.core5.http.io.entity.StringEntity;
+import org.apache.hc.core5.util.Timeout;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 public class AiAgentClient {
   private final String baseUrl;
@@ -37,8 +37,8 @@ public class AiAgentClient {
 
   private Map<String,Object> postJson(String path, Map<String,Object> payload) throws Exception {
     RequestConfig config = RequestConfig.custom()
-      .setConnectTimeout(30, TimeUnit.SECONDS)
-      .setResponseTimeout(300, TimeUnit.SECONDS) // 5 minutes for AI processing
+      .setConnectTimeout(Timeout.ofSeconds(30))
+      .setResponseTimeout(Timeout.ofSeconds(300)) // 5 minutes for AI processing
       .build();
     try (CloseableHttpClient client = HttpClients.custom()
       .setDefaultRequestConfig(config)

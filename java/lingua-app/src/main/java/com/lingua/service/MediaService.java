@@ -3,14 +3,18 @@ package com.lingua.service;
 import org.springframework.stereotype.Service;
 import java.nio.file.*;
 import java.io.*;
+import java.util.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
 public class MediaService {
   public Path extractEmbeddedSubtitles(Path mediaPath) throws Exception {
     Path mediaPathAbs = mediaPath.toAbsolutePath();
-    // Output to data/output relative to mediaPath (go up from data/input to project root, then to data/output)
-    Path mediaParent = mediaPathAbs.getParent(); // data/input
-    Path projectRoot = mediaParent.getParent(); // project root
+    // Output to data/output relative to project root (media is under data/input)
+    Path mediaParent = mediaPathAbs.getParent(); // .../data/input
+    Path projectRoot = mediaParent.getParent() != null && mediaParent.getParent().getParent() != null
+      ? mediaParent.getParent().getParent() // go up two levels from data/input to project root
+      : mediaPathAbs.getParent();
     Path out = projectRoot.resolve("data/output").resolve(mediaPathAbs.getFileName().toString() + ".embedded.srt");
     
     // Check if already extracted
@@ -30,18 +34,34 @@ public class MediaService {
       System.err.println("FFprobe failed with code " + code + ": " + errorOutput);
       return null;
     }
-    int idxPos = json.indexOf("\"index\":");
-    if (idxPos < 0) {
-      System.err.println("No subtitle stream index found in: " + json);
+    Integer idx = null;
+    try {
+      Map<?,?> root = new ObjectMapper().readValue(json, Map.class);
+      Object streamsObj = root.get("streams");
+      if (streamsObj instanceof List<?>) {
+        List<?> streams = (List<?>) streamsObj;
+        if (!streams.isEmpty()) {
+          // Prefer first subtitle stream; if language preference needed, enhance here
+          Object first = streams.get(0);
+          if (first instanceof Map<?,?>) {
+            Map<?,?> m = (Map<?,?>) first;
+            Object indexVal = m.get("index");
+            if (indexVal instanceof Number) {
+              idx = ((Number) indexVal).intValue();
+            } else if (indexVal != null) {
+              try { idx = Integer.parseInt(indexVal.toString()); } catch (NumberFormatException ignored) {}
+            }
+          }
+        }
+      }
+    } catch (Exception e) {
+      System.err.println("Failed to parse ffprobe JSON: " + e.getMessage());
+    }
+    if (idx == null) {
+      System.err.println("No subtitle stream index could be determined from ffprobe output.");
       return null;
     }
-    String rest = json.substring(idxPos + 8);
-    String num = rest.replaceAll("[^0-9]", "");
-    if (num.isEmpty()) {
-      System.err.println("Could not extract subtitle index from: " + rest);
-      return null;
-    }
-    String index = num;
+    String index = Integer.toString(idx);
     ProcessBuilder ff = new ProcessBuilder(
       "ffmpeg","-y","-i", mediaPathAbs.toString(),"-map","0:"+index,"-c:s","srt", out.toString()
     );
